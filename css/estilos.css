@@ -1,0 +1,251 @@
+body {
+  background-color: #fff5e1;
+  font-family: "Lato", sans-serif;
+  color: #5d4037;
+}
+
+/* Header mejorado */
+.card-header {
+  background-color: #8b4513 !important;
+}
+
+.header-sub {
+  background-color: #8b4513;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.btn-panaderia {
+  background-color: #8b4513;
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+}
+
+.header-sub-escudo-img {
+  height: 60px;
+}
+
+.header-sub-der {
+  display: flex;
+  align-items: center;
+}
+
+.header-sub-ico-img {
+  height: 40px;
+}
+
+.brand-name {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 1.8rem;
+  margin: 0 15px;
+}
+
+.boton {
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.boton-ingresar {
+  background-color: #d2691e;
+  color: white;
+  border: 2px solid #a0522d;
+}
+
+.boton-susc {
+  background-color: #cd853f;
+  color: white;
+  border: 2px solid #a0522d;
+}
+
+.boton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider */
+.slidercont {
+  height: 400px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+  background-color: #ffc0cb;
+  padding: 40px 0;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.welcome-title {
+  font-family: "Pacifico", cursive;
+  color: #5d4037;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Sección de horario */
+.schedule-section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+  text-align: center;
+}
+
+.schedule-title {
+  font-family: "Pacifico", cursive;
+  color: #8b4513;
+  margin-bottom: 15px;
+}
+
+.schedule-time {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #5d4037;
+}
+
+/* Productos */
+.titulorub {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 28px;
+  color: #8b4513;
+  font-weight: bold;
+  position: relative;
+  font-family: "Pacifico", cursive;
+}
+
+.titulorub span {
+  background-color: #fff5e1;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.titulorub:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #8b4513;
+  z-index: 0;
+}
+
+.colemp {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.imgemp {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.anim:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.curv {
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #8b4513;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-info-ico {
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Sección de ofertas */
+.offer-banner {
+  background: linear-gradient(to right, #8b4513, #cd853f);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.offer-text {
+  font-size: 1.4rem;
+  font-family: "Pacifico", cursive;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slidercont {
+    height: 250px;
+  }
+
+  .carousel-item {
+    height: 250px;
+  }
+
+  .header-sub-botonera {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boton {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .imgemp {
+    height: 200px;
+  }
+
+  .brand-name {
+    font-size: 1.4rem;
+  }
+}
