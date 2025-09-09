@@ -24,409 +24,427 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="header-sub sombra">
-      <div class="brand-name">Pastelería Mil Sabores</div>
-      <div class="header-sub-der">
-        <div class="header-sub-botonera hide-in-resp">
-          <a
-            class="boton boton-ingresar sombra anim"
-            data-bs-toggle="offcanvas"
-            href="#login"
-            >Ingresar</a
-          >
-          <a class="boton boton-susc sombra anim" href="registro.html"
-            >Registrarse</a
-          >
+    <header>
+      <div class="header-sub sombra">
+        <div class="brand-name">Pastelería Mil Sabores</div>
+        <div class="header-sub-der">
+          <div class="header-sub-botonera hide-in-resp">
+            <a
+              class="boton boton-ingresar sombra anim"
+              data-bs-toggle="offcanvas"
+              href="#login"
+              >Ingresar</a
+            >
+            <a class="boton boton-susc sombra anim" href="registro.html"
+              >Registrarse</a
+            >
+          </div>
+          <div class="header-sub-botonera show-in-resp">
+            <button
+              class="boton-menu anim"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsemenu"
+            >
+              <img
+                class="boton-menu-ico"
+                src="imagenes/menu_ico.png"
+                alt="Menú"
+              />
+            </button>
+          </div>
         </div>
-        <div class="header-sub-botonera show-in-resp">
-          <button
-            class="boton-menu anim"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsemenu"
-          >
-            <img
-              class="boton-menu-ico"
-              src="imagenes/menu_ico.png"
-              alt="Menú"
-            />
-          </button>
+        <div
+          class="collapse show-in-resp"
+          id="collapsemenu"
+          style="width: 100% !important"
+        >
+          <div class="header-sub-menu">
+            <ul class="header-sub-menu-list">
+              <li class="d-flex">
+                <a data-bs-toggle="offcanvas" href="#login">Ingresa</a>
+              </li>
+              <li class="d-flex">
+                <a href="registro.html">Registrarse</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div
-        class="collapse show-in-resp"
-        id="collapsemenu"
-        style="width: 100% !important"
-      >
-        <div class="header-sub-menu">
-          <ul class="header-sub-menu-list">
-            <li class="d-flex">
-              <a data-bs-toggle="offcanvas" href="#login">Ingresa</a>
-            </li>
-            <li class="d-flex">
-              <a href="registro.html">Registrarse</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </header>
 
     <!-- Carrusel -->
-    <div class="container-fluid back" style="padding: 0">
-      <div class="row slidercont">
-        <div
-          id="slider"
-          class="carousel carousel-fade slide h-100"
-          data-bs-ride="carousel"
-          style="padding: 0"
-        >
-          <div class="carousel-inner h-100">
-            <div class="carousel-item active">
-              <img
-                src="assets/grandes/empanada de manzana.webp"
-                class="d-block w-100"
-                alt="Panadería"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Celebra tus momentos especiales</h3>
-                <p>Con nuestras tortas personalizadas</p>
+    <section>
+      <div class="container-fluid back" style="padding: 0">
+        <div class="row slidercont">
+          <div
+            id="slider"
+            class="carousel carousel-fade slide h-100"
+            data-bs-ride="carousel"
+            style="padding: 0"
+          >
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active">
+                <img
+                  src="assets/grandes/empanada de manzana.webp"
+                  class="d-block w-100"
+                  alt="Panadería"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Celebra tus momentos especiales</h3>
+                  <p>Con nuestras tortas personalizadas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/grandes/mousse de chocolate.jpg"
+                  class="d-block w-100"
+                  alt="Pastelería"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>50 años endulzando momentos</h3>
+                  <p>Desde 1974 creando los mejores sabores</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/grandes/torta de novios.png"
+                  class="d-block w-100"
+                  alt="Tortas"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Ingredientes de la más alta calidad</h3>
+                  <p>Elaborados artesanalmente para ti</p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="assets/grandes/mousse de chocolate.jpg"
-                class="d-block w-100"
-                alt="Pastelería"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>50 años endulzando momentos</h3>
-                <p>Desde 1974 creando los mejores sabores</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/grandes/torta de novios.png"
-                class="d-block w-100"
-                alt="Tortas"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Ingredientes de la más alta calidad</h3>
-                <p>Elaborados artesanalmente para ti</p>
-              </div>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon anim"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon anim"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#slider"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon anim"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#slider"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon anim"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Banner de Oferta Especial -->
-    <div class="container">
-      <div class="offer-banner">
-        <p class="offer-text">
-          🎂 ¡Celebramos 50 años! 50% de descuento para mayores de 50 años 🎂
-        </p>
-      </div>
-    </div>
-
-    <!-- Sección de Bienvenida -->
-    <div class="container">
-      <div class="welcome-section">
-        <h2 class="welcome-title">Bienvenidos a Pastelería Mil Sabores</h2>
-        <p class="welcome-text">
-          Desde 1974 endulzando los momentos especiales de tu vida. Nuestra
-          tradición repostera se combina con la innovación para brindarte los
-          sabores más exquisitos, elaborados con amor y los ingredientes de más
-          alta calidad.
-        </p>
-      </div>
-    </div>
-
-    <!-- Sección de Horario -->
-    <div class="container">
-      <div class="schedule-section">
-        <h3 class="schedule-title">Nuestro Horario de Atención</h3>
-        <p class="schedule-time">Lunes a Jueves: 8:30 - 18:30 hrs</p>
-        <p class="schedule-time">Viernes: 8:30 - 17:30 hrs</p>
-        <p class="schedule-time">Sábados: 9:00 - 14:00 hrs</p>
-        <p>¡Te esperamos para disfrutar de nuestros deliciosos productos!</p>
-      </div>
-    </div>
-
-    <!-- Contenido Principal -->
-    <div class="container my-5">
-      <!-- Pastelería Tradicional -->
-      <div class="row">
-        <div class="col-12">
-          <div class="titulorub"><span>Pastelería Tradicional</span></div>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PT001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="background-image: url('../frontend/assets/images/emp.jpg')"
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PT002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/santiago.jpg');
-              "
-            ></div>
-          </a>
+    <section>
+      <!-- Banner de Oferta Especial -->
+      <div class="container">
+        <div class="offer-banner">
+          <p class="offer-text">
+            🎂 ¡Celebramos 50 años! 50% de descuento para mayores de 50 años 🎂
+          </p>
         </div>
       </div>
+    </section>
 
-      <!-- Tortas Cuadradas -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Tortas Cuadradas</span></div>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="TC001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/grandes/torta\ ganache.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="TC002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/frutas.jpg');
-              "
-            ></div>
-          </a>
+    <section>
+      <!-- Sección de Bienvenida -->
+      <div class="container">
+        <div class="welcome-section">
+          <h2 class="welcome-title">Bienvenidos a Pastelería Mil Sabores</h2>
+          <p class="welcome-text">
+            Desde 1974 endulzando los momentos especiales de tu vida. Nuestra
+            tradición repostera se combina con la innovación para brindarte los
+            sabores más exquisitos, elaborados con amor y los ingredientes de
+            más alta calidad.
+          </p>
         </div>
       </div>
+    </section>
 
-      <!-- Tortas Circulares -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Tortas Circulares</span></div>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="TT001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/vainilla.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="TT002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="background-image: url('../torta\ nuez\ manjar.png')"
-            ></div>
-          </a>
+    <section>
+      <!-- Sección de Horario -->
+      <div class="container">
+        <div class="schedule-section">
+          <h3 class="schedule-title">Nuestro Horario de Atención</h3>
+          <p class="schedule-time">Lunes a Jueves: 8:30 - 18:30 hrs</p>
+          <p class="schedule-time">Viernes: 8:30 - 17:30 hrs</p>
+          <p class="schedule-time">Sábados: 9:00 - 14:00 hrs</p>
+          <p>¡Te esperamos para disfrutar de nuestros deliciosos productos!</p>
         </div>
       </div>
+    </section>
 
-      <!-- Postres Individuales -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Postres Individuales</span></div>
+    <section>
+      <!-- Contenido Principal -->
+      <div class="container my-5">
+        <!-- Pastelería Tradicional -->
+        <div class="row">
+          <div class="col-12">
+            <div class="titulorub"><span>Pastelería Tradicional</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PT001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/emp.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PT002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/santiago.jpg');
+                "
+              ></div>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 colemp anim" data-producto="PI001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/mouse.jpg');
-              "
-            ></div>
-          </a>
+
+        <!-- Tortas Cuadradas -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Tortas Cuadradas</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="TC001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/grandes/torta\ ganache.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="TC002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/frutas.jpg');
+                "
+              ></div>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 colemp anim" data-producto="PI002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/tiramisui.jpg');
-              "
-            ></div>
-          </a>
+
+        <!-- Tortas Circulares -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Tortas Circulares</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="TT001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/vainilla.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="TT002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="background-image: url('../torta\ nuez\ manjar.png')"
+              ></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Postres Individuales -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Postres Individuales</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PI001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/mouse.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PI002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/tiramisui.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Productos sin Azucar -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Productos sin Azucar</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PSA001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/tortanaranja.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PSA002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/cheesake.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Productos sin Gluten</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PG001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/brownie.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PG002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/pan.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Productos Veganos</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PV001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/veganachoc.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="PV002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/galletas.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="titulorub"><span>Tortas Especiales</span></div>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="TE001">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/cumple.jpg');
+                "
+              ></div>
+            </a>
+          </div>
+          <div class="col-md-6 colemp anim" data-producto="TE002">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
+              <div
+                class="curv imgemp"
+                style="
+                  background-image: url('../frontend/assets/images/novios.jpg');
+                "
+              ></div>
+            </a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Productos sin Azucar -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Productos sin Azucar</span></div>
+    <footer>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-info">
+          <div class="txtsize" style="font-weight: bold">
+            Panaderia Mil Sabores
+          </div>
+          <div class="txtsize">
+            <img
+              class="footer-info-ico"
+              src="../frontend/assets/images/telefono.png"
+              alt="Teléfono"
+            />
+            <span style="vertical-align: middle">+32-5161516</span>
+            <span style="vertical-align: middle"> |&nbsp;</span>
+            <span style="vertical-align: middle">+32-2541256</span>
+            <span style="vertical-align: middle"> |&nbsp;</span>
+
+            <img
+              class="footer-info-ico"
+              src="../frontend/assets/images/reloj.png"
+              alt="Horario"
+            />
+            <span style="vertical-align: middle"
+              >&nbsp; Lun. a Jue., 8:30 - 18:30, Vie. 8:30 - 17:30</span
+            >
+          </div>
+          <div class="txtsize">
+            <img
+              class="footer-info-ico"
+              src="../frontend/assets/images/mail22.png"
+              alt="Email"
+            />
+            <span style="vertical-align: text-top"
+              >panaderiamilsabores@gmail.cl</span
+            >
+          </div>
         </div>
-        <div class="col-md-6 colemp anim" data-producto="PSA001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/tortanaranja.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PSA002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/cheesake.jpg');
-              "
-            ></div>
-          </a>
+
+        <div class="footer-copy txtsize">
+          Copyright © 2025 Diseño Depto Informatica | Duoc - Uc
         </div>
       </div>
-
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Productos sin Gluten</span></div>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PG001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/brownie.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PG002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="background-image: url('../frontend/assets/images/pan.jpg')"
-            ></div>
-          </a>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Productos Veganos</span></div>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PV001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/veganachoc.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="PV002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/galletas.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="titulorub"><span>Tortas Especiales</span></div>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="TE001">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/cumple.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-        <div class="col-md-6 colemp anim" data-producto="TE002">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#productoModal">
-            <div
-              class="curv imgemp"
-              style="
-                background-image: url('../frontend/assets/images/novios.jpg');
-              "
-            ></div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer-info">
-        <div class="txtsize" style="font-weight: bold">
-          Panaderia Mil Sabores
-        </div>
-        <div class="txtsize">
-          <img
-            class="footer-info-ico"
-            src="../frontend/assets/images/telefono.png"
-            alt="Teléfono"
-          />
-          <span style="vertical-align: middle">+32-5161516</span>
-          <span style="vertical-align: middle"> |&nbsp;</span>
-          <span style="vertical-align: middle">+32-2541256</span>
-          <span style="vertical-align: middle"> |&nbsp;</span>
-
-          <img
-            class="footer-info-ico"
-            src="../frontend/assets/images/reloj.png"
-            alt="Horario"
-          />
-          <span style="vertical-align: middle"
-            >&nbsp; Lun. a Jue., 8:30 - 18:30, Vie. 8:30 - 17:30</span
-          >
-        </div>
-        <div class="txtsize">
-          <img
-            class="footer-info-ico"
-            src="../frontend/assets/images/mail22.png"
-            alt="Email"
-          />
-          <span style="vertical-align: text-top"
-            >panaderiamilsabores@gmail.cl</span
-          >
-        </div>
-      </div>
-
-      <div class="footer-copy txtsize">
-        Copyright © 2025 Diseño Depto Informatica | Duoc - Uc
-      </div>
-    </div>
+    </footer>
 
     <!-- Modal de Producto -->
     <div

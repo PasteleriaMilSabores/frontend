@@ -24,51 +24,55 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="header-sub sombra">
-      <div class="brand-name">Pastelería Mil Sabores</div>
-      <div class="header-sub-der">
-        <div class="header-sub-botonera hide-in-resp">
-          <a
-            class="boton boton-ingresar sombra anim"
-            data-bs-toggle="offcanvas"
-            href="#login"
-            >Ingresar</a
-          >
-          <a class="boton boton-susc sombra anim" href="registro.html"
-            >Registrarse</a
-          >
+    <header>
+      <div class="header-sub sombra">
+        <div class="brand-name" onclick="window.location.href='index.html'">
+          Pastelería Mil Sabores
         </div>
-        <div class="header-sub-botonera show-in-resp">
-          <button
-            class="boton-menu anim"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsemenu"
-          >
-            <img
-              class="boton-menu-ico"
-              src="imagenes/menu_ico.png"
-              alt="Menú"
-            />
-          </button>
+        <div class="header-sub-der">
+          <div class="header-sub-botonera hide-in-resp">
+            <a
+              class="boton boton-ingresar sombra anim"
+              data-bs-toggle="offcanvas"
+              href="#login"
+              >Ingresar</a
+            >
+            <a class="boton boton-susc sombra anim" href="registro.html"
+              >Registrarse</a
+            >
+          </div>
+          <div class="header-sub-botonera show-in-resp">
+            <button
+              class="boton-menu anim"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsemenu"
+            >
+              <img
+                class="boton-menu-ico"
+                src="imagenes/menu_ico.png"
+                alt="Menú"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="collapse show-in-resp"
+          id="collapsemenu"
+          style="width: 100% !important"
+        >
+          <div class="header-sub-menu">
+            <ul class="header-sub-menu-list">
+              <li class="d-flex">
+                <a data-bs-toggle="offcanvas" href="#login">Ingresa</a>
+              </li>
+              <li class="d-flex">
+                <a href="registro.html">Registrarse</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div
-        class="collapse show-in-resp"
-        id="collapsemenu"
-        style="width: 100% !important"
-      >
-        <div class="header-sub-menu">
-          <ul class="header-sub-menu-list">
-            <li class="d-flex">
-              <a data-bs-toggle="offcanvas" href="#login">Ingresa</a>
-            </li>
-            <li class="d-flex">
-              <a href="registro.html">Registrarse</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </header>
 
     <!-- Formulario de Registro -->
     <div class="container my-5">
@@ -225,47 +229,49 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-      <div class="footer-info">
-        <div class="txtsize" style="font-weight: bold">
-          Panaderia Mil Sabores
-        </div>
-        <div class="txtsize">
-          <img
-            class="footer-info-ico"
-            src="../frontend/assets/images/telefono.png"
-            alt="Teléfono"
-          />
-          <span style="vertical-align: middle">+32-5161516</span>
-          <span style="vertical-align: middle"> |&nbsp;</span>
-          <span style="vertical-align: middle">+32-2541256</span>
-          <span style="vertical-align: middle"> |&nbsp;</span>
+    <footer>
+      <div class="footer">
+        <div class="footer-info">
+          <div class="txtsize" style="font-weight: bold">
+            Panaderia Mil Sabores
+          </div>
+          <div class="txtsize">
+            <img
+              class="footer-info-ico"
+              src="../frontend/assets/images/telefono.png"
+              alt="Teléfono"
+            />
+            <span style="vertical-align: middle">+32-5161516</span>
+            <span style="vertical-align: middle"> |&nbsp;</span>
+            <span style="vertical-align: middle">+32-2541256</span>
+            <span style="vertical-align: middle"> |&nbsp;</span>
 
-          <img
-            class="footer-info-ico"
-            src="../frontend/assets/images/reloj.png"
-            alt="Horario"
-          />
-          <span style="vertical-align: middle"
-            >&nbsp; Lun. a Jue., 8:30 - 18:30, Vie. 8:30 - 17:30</span
-          >
+            <img
+              class="footer-info-ico"
+              src="../frontend/assets/images/reloj.png"
+              alt="Horario"
+            />
+            <span style="vertical-align: middle"
+              >&nbsp; Lun. a Jue., 8:30 - 18:30, Vie. 8:30 - 17:30</span
+            >
+          </div>
+          <div class="txtsize">
+            <img
+              class="footer-info-ico"
+              src="../frontend/assets/images/mail22.png"
+              alt="Email"
+            />
+            <span style="vertical-align: text-top"
+              >panaderiamilsabores@gmail.cl</span
+            >
+          </div>
         </div>
-        <div class="txtsize">
-          <img
-            class="footer-info-ico"
-            src="../frontend/assets/images/mail22.png"
-            alt="Email"
-          />
-          <span style="vertical-align: text-top"
-            >panaderiamilsabores@gmail.cl</span
-          >
+
+        <div class="footer-copy txtsize">
+          Copyright © 2025 Diseño Depto Informatica | Duoc - Uc
         </div>
       </div>
-
-      <div class="footer-copy txtsize">
-        Copyright © 2025 Diseño Depto Informatica | Duoc - Uc
-      </div>
-    </div>
+    </footer>
 
     <!-- Modal de éxito -->
     <div
@@ -372,34 +378,6 @@
     <!-- Bootstrap & Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-    <!-- Script personalizado para validación -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("registroForm");
-        const exitoModal = new bootstrap.Modal(
-          document.getElementById("exitoModal")
-        );
-        const errorModal = new bootstrap.Modal(
-          document.getElementById("errorModal")
-        );
-
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          if (!form.checkValidity()) {
-            event.stopPropagation();
-            form.classList.add("was-validated");
-            errorModal.show();
-          } else {
-            // Si el formulario es válido, mostrar modal de éxito
-            exitoModal.show();
-            // Opcional: resetear el formulario después de un registro exitoso
-            // form.reset();
-            // form.classList.remove('was-validated');
-          }
-        });
-      });
-    </script>
+    <script src="js/registro.js"></script>
   </body>
 </html>
